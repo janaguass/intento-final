@@ -11,22 +11,38 @@
       type="image/x-icon" 
     />
     <title>Contacto</title>
+     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html"> <img src="https://res.cloudinary.com/wsulstej/image/upload/v1793211929/djomgz99adt6z9zosdpv.png" alt="Logo con letras JA que llevan a la página de inicio" width="40"></a>
-        <ul>
-          <li><a href="index.html#About">About</a></li>
-          <li><a href="index.html#Skills">Skills</a></li>
-          <li><a href="index.html#Cheatsheets">Cheatsheets</a></li> 
-          <li><a href="index.html#Recursos">Recursos</a></li>    
-          <li><a href="contacto.html">Contacto</a></li>
+       <header class="header">
+      <div class="container header-content">
+      
+        <div class="logo">
+        <a href="index.html"> <img src="https://res.cloudinary.com/wsulstej/image/upload/v1794595430/copy_of_untitled_project.png" alt="Logo con letras JA que llevan a la página de inicio" width="40"></a>
+        </div>
+        <nav class="nav"> 
+        <ul class="nav-list">
+           <li><a href="about.html" class="nav-about">About</a></li>
+          <li><a href="index.html#skills" class="nav-skills">Skills</a></li>
+          <li><a href="index.html#cheatsheets" class="nav-cheatsheets">Cheatsheets</a></li> 
+          <li><a href="index.html#recursos" class="nav-recursos">Recursos</a></li>    
+          <li><a href="contacto.html" class="nav-contacto">Contacto</a></li>
         </ul>
       </nav>
-      <h1>Jana Araguas</h1>
+      <button
+      class="hamburger"
+      id="hamburger"
+      aria-label="Menú de navegación"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+      </div>
     </header> 
-    <main>
+    <main class="main">
+    <div class="container">
 <section>
   <form action="#" method="POST">
     <fieldset>
@@ -55,6 +71,10 @@
 
     </form>
 </section>
+    </div>
     </main>
+     <footer>
+      <p>&copy; 2026 Mi sitio web - Jana Araguas</p>
+    </footer>
   </body>
 </html>
