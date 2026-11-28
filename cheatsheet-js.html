@@ -51,14 +51,24 @@
       </div>
     </header>
 
-    <main class="main">
-      <div class="container">
+<main class="main">
+      <div class="container cheatsheet-layout">
+        <aside class="cheatsheet-nav" aria-label="Índice de JavaScript">
+          <h2>Contenido</h2>
+          <ul>
+            <li><a href="#variables">1. Variables y funciones</a></li>
+            <li><a href="#arrays-objetos">2. Arrays y objetos</a></li>
+            <li><a href="#dom">3. Manipulación del DOM</a></li>
+            <li><a href="#eventos-modulos">4. Eventos y módulos</a></li>
+          </ul>
+        </aside>
+
         <section class="cheatsheet-detail">
           <a href="index.html" class="back-link">← Volver al inicio</a>
           <h1>Cheatsheet JavaScript</h1>
           <p>Referencia rápida de variables, funciones, arrays y objetos, DOM, eventos y módulos ES.</p>
 
-          <article class="cheatsheet-block">
+          <article id="variables" class="cheatsheet-block">
             <h2>1. Variables, tipos y funciones</h2>
             <p>Usa <code>const</code> por defecto y <code>let</code> cuando el valor vaya a reasignarse:</p>
             <pre><code>const nombre = "Jana";
@@ -71,7 +81,7 @@ function sumar(a, b) {
 const multiplicar = (a, b) =&gt; a * b;</code></pre>
           </article>
 
-          <article class="cheatsheet-block">
+          <article id="arrays-objetos" class="cheatsheet-block">
             <h2>2. Arrays y objetos</h2>
             <p>Estructuras habituales para guardar colecciones y datos agrupados por clave:</p>
             <pre><code>const lenguajes = ["HTML", "CSS", "JS"];
@@ -83,7 +93,7 @@ const tarjeta = {
 };</code></pre>
           </article>
 
-          <article class="cheatsheet-block">
+          <article id="dom" class="cheatsheet-block">
             <h2>3. Selección y manipulación del DOM</h2>
             <p>Permiten buscar elementos en el documento y actualizar su contenido o clases:</p>
             <pre><code>const boton = document.querySelector("#dark-mode-btn");
@@ -93,7 +103,7 @@ document.body.classList.toggle("dark-mode");
 contenedor.innerHTML = "&lt;p&gt;Contenido actualizado&lt;/p&gt;";</code></pre>
           </article>
 
-          <article class="cheatsheet-block">
+          <article id="eventos-modulos" class="cheatsheet-block">
             <h2>4. Eventos y módulos ES</h2>
             <p>Escucha interacciones del usuario y divide el código en archivos con <code>import</code> y <code>export</code>:</p>
             <pre><code>// En un módulo (por ejemplo, cheatsheetsList.js)

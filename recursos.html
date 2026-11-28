@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Recursos recomendados de desarrollo web organizados por categorías: documentación, aprendizaje, herramientas, accesibilidad, blogs y diseño"
+    />
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/wsulstej/image/upload/v1793211929/djomgz99adt6z9zosdpv.png"
+      type="image/x-icon"
+    />
+    <title>Recursos — Jana Araguas</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-content">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="https://res.cloudinary.com/wsulstej/image/upload/v1794595430/copy_of_untitled_project.png"
+              alt="Logo con letras JA que llevan a la página de inicio"
+              width="40"
+            />
+          </a>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="about.html" class="nav-about">About</a></li>
+            <li><a href="index.html#skills" class="nav-skills">Skills</a></li>
+            <li><a href="index.html#cheatsheets" class="nav-cheatsheets">Cheatsheets</a></li>
+            <li><a href="recursos.html" class="nav-recursos">Recursos</a></li>
+            <li><a href="contacto.html" class="nav-contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button id="dark-mode-btn" class="dark-mode-btn" aria-label="Cambiar modo">🌙</button>
+          <button class="hamburger" id="hamburger" aria-label="Menú de navegación">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="resources-section">
+          <a href="index.html" class="back-link">← Volver al inicio</a>
+          <h1>Recursos recomendados</h1>
+          <p>Enlaces útiles organizados por categoría para consultar y seguir aprendiendo.</p>
+
+          <div id="resources-tabs" class="resources-tabs" role="tablist" aria-label="Categorías de recursos"></div>
+          <div id="resources-panels" class="resources-panels"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Mi sitio web - Jana Araguas</p>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

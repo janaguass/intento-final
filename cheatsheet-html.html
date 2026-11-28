@@ -51,29 +51,39 @@
       </div>
     </header>
 
-    <main class="main">
-      <div class="container">
+   <main class="main">
+      <div class="container cheatsheet-layout">
+        <aside class="cheatsheet-nav" aria-label="Índice de HTML5">
+          <h2>Contenido</h2>
+          <ul>
+            <li><a href="#estructura">1. Estructura básica</a></li>
+            <li><a href="#semantica">2. Etiquetas semánticas</a></li>
+            <li><a href="#contenido">3. Textos, listas y enlaces</a></li>
+            <li><a href="#formularios">4. Formularios HTML5</a></li>
+          </ul>
+        </aside>
+
         <section class="cheatsheet-detail">
           <a href="index.html" class="back-link">← Volver al inicio</a>
           <h1>Cheatsheet HTML5</h1>
           <p>Referencia rápida de estructura y etiquetas fundamentales de HTML5.</p>
-          <!-- Aquí iremos añadiendo los apartados de HTML5 paso a paso -->
-           <article class="cheatsheet-block">
+
+          <article id="estructura" class="cheatsheet-block">
             <h2>1. Estructura básica del documento</h2>
             <p>Todo documento HTML5 empieza declarando el tipo de documento y envolviendo el contenido en <code>&lt;html&gt;</code>.</p>
             <pre><code>&lt;!DOCTYPE html&gt;
-            &lt;html lang="es"&gt;
-            &lt;head&gt;
-            &lt;meta charset="UTF-8" /&gt;
-            &lt;title&gt;Título de la página&lt;/title&gt;
-            &lt;/head&gt;
-            &lt;body&gt;
-            &lt;!-- Contenido visible --&gt;
-            &lt;/body&gt;
-            &lt;/html&gt;</code></pre>
+&lt;html lang="es"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;title&gt;Título de la página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Contenido visible --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
           </article>
 
-          <article class="cheatsheet-block">
+          <article id="semantica" class="cheatsheet-block">
             <h2>2. Etiquetas semánticas</h2>
             <p>Describen el propósito de cada bloque para accesibilidad, SEO y claridad del código:</p>
             <ul>
@@ -86,9 +96,8 @@
               <li><code>&lt;footer&gt;</code>: pie de página o de sección.</li>
             </ul>
           </article>
-        </section>
-      </div>
-      <article class="cheatsheet-block">
+
+          <article id="contenido" class="cheatsheet-block">
             <h2>3. Textos, listas, enlaces e imágenes</h2>
             <p>Elementos habituales para estructurar el contenido dentro de cada sección:</p>
             <pre><code>&lt;h2&gt;Subtítulo&lt;/h2&gt;
@@ -102,7 +111,8 @@
 &lt;a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer"&gt;MDN Web Docs&lt;/a&gt;
 &lt;img src="ruta-imagen.png" alt="Descripción clara de la imagen" /&gt;</code></pre>
           </article>
-          <article class="cheatsheet-block">
+
+          <article id="formularios" class="cheatsheet-block">
             <h2>4. Formularios y controles HTML5</h2>
             <p>Permiten recoger datos del usuario y aplicar validación básica directamente desde el navegador:</p>
             <pre><code>&lt;form action="#" method="POST"&gt;
@@ -122,6 +132,8 @@
   &lt;/fieldset&gt;
 &lt;/form&gt;</code></pre>
           </article>
+        </section>
+      </div>
     </main>
 
     <footer>
