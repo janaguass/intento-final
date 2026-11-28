@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cheatsheet de HTML5: estructura, etiquetas semánticas, textos, enlaces, listas y formularios"
+    />
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/wsulstej/image/upload/v1793211929/djomgz99adt6z9zosdpv.png"
+      type="image/x-icon"
+    />
+    <title>Cheatsheet HTML5 — Jana Araguas</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-content">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="https://res.cloudinary.com/wsulstej/image/upload/v1794595430/copy_of_untitled_project.png"
+              alt="Logo con letras JA que llevan a la página de inicio"
+              width="40"
+            />
+          </a>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="about.html" class="nav-about">About</a></li>
+            <li><a href="index.html#skills" class="nav-skills">Skills</a></li>
+            <li><a href="index.html#cheatsheets" class="nav-cheatsheets">Cheatsheets</a></li>
+            <li><a href="index.html#recursos" class="nav-recursos">Recursos</a></li>
+            <li><a href="contacto.html" class="nav-contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button id="dark-mode-btn" class="dark-mode-btn" aria-label="Cambiar modo">🌙</button>
+          <button class="hamburger" id="hamburger" aria-label="Menú de navegación">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="cheatsheet-detail">
+          <a href="index.html" class="back-link">← Volver al inicio</a>
+          <h1>Cheatsheet HTML5</h1>
+          <p>Referencia rápida de estructura y etiquetas fundamentales de HTML5.</p>
+          <!-- Aquí iremos añadiendo los apartados de HTML5 paso a paso -->
+           <article class="cheatsheet-block">
+            <h2>1. Estructura básica del documento</h2>
+            <p>Todo documento HTML5 empieza declarando el tipo de documento y envolviendo el contenido en <code>&lt;html&gt;</code>.</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+            &lt;html lang="es"&gt;
+            &lt;head&gt;
+            &lt;meta charset="UTF-8" /&gt;
+            &lt;title&gt;Título de la página&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;!-- Contenido visible --&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;</code></pre>
+          </article>
+
+          <article class="cheatsheet-block">
+            <h2>2. Etiquetas semánticas</h2>
+            <p>Describen el propósito de cada bloque para accesibilidad, SEO y claridad del código:</p>
+            <ul>
+              <li><code>&lt;header&gt;</code>: cabecera introductoria o de navegación.</li>
+              <li><code>&lt;nav&gt;</code>: grupo principal de enlaces de navegación.</li>
+              <li><code>&lt;main&gt;</code>: contenido principal y único de la página.</li>
+              <li><code>&lt;section&gt;</code>: agrupación temática con un encabezado.</li>
+              <li><code>&lt;article&gt;</code>: contenido independiente y reutilizable (como una tarjeta o entrada).</li>
+              <li><code>&lt;aside&gt;</code>: información complementaria o lateral.</li>
+              <li><code>&lt;footer&gt;</code>: pie de página o de sección.</li>
+            </ul>
+          </article>
+        </section>
+      </div>
+      <article class="cheatsheet-block">
+            <h2>3. Textos, listas, enlaces e imágenes</h2>
+            <p>Elementos habituales para estructurar el contenido dentro de cada sección:</p>
+            <pre><code>&lt;h2&gt;Subtítulo&lt;/h2&gt;
+&lt;p&gt;Texto normal con &lt;strong&gt;importancia&lt;/strong&gt; y &lt;em&gt;énfasis&lt;/em&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Elemento sin orden&lt;/li&gt;
+  &lt;li&gt;Otro elemento&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer"&gt;MDN Web Docs&lt;/a&gt;
+&lt;img src="ruta-imagen.png" alt="Descripción clara de la imagen" /&gt;</code></pre>
+          </article>
+          <article class="cheatsheet-block">
+            <h2>4. Formularios y controles HTML5</h2>
+            <p>Permiten recoger datos del usuario y aplicar validación básica directamente desde el navegador:</p>
+            <pre><code>&lt;form action="#" method="POST"&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Contacto&lt;/legend&gt;
+
+    &lt;label for="nombre"&gt;Nombre&lt;/label&gt;
+    &lt;input type="text" id="nombre" name="nombre" required /&gt;
+
+    &lt;label for="correo"&gt;Email&lt;/label&gt;
+    &lt;input type="email" id="correo" name="correo" required /&gt;
+
+    &lt;label for="mensaje"&gt;Mensaje&lt;/label&gt;
+    &lt;textarea id="mensaje" name="mensaje" rows="4"&gt;&lt;/textarea&gt;
+
+    &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+          </article>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Mi sitio web - Jana Araguas</p>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
