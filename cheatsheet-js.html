@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cheatsheet de JavaScript: variables, funciones, arrays y objetos, DOM, eventos y módulos ES"
+    />
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/wsulstej/image/upload/v1793211929/djomgz99adt6z9zosdpv.png"
+      type="image/x-icon"
+    />
+    <title>Cheatsheet JavaScript — Jana Araguas</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-content">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="https://res.cloudinary.com/wsulstej/image/upload/v1794595430/copy_of_untitled_project.png"
+              alt="Logo con letras JA que llevan a la página de inicio"
+              width="40"
+            />
+          </a>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="about.html" class="nav-about">About</a></li>
+            <li><a href="index.html#skills" class="nav-skills">Skills</a></li>
+            <li><a href="index.html#cheatsheets" class="nav-cheatsheets">Cheatsheets</a></li>
+            <li><a href="index.html#recursos" class="nav-recursos">Recursos</a></li>
+            <li><a href="contacto.html" class="nav-contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button id="dark-mode-btn" class="dark-mode-btn" aria-label="Cambiar modo">🌙</button>
+          <button class="hamburger" id="hamburger" aria-label="Menú de navegación">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="cheatsheet-detail">
+          <a href="index.html" class="back-link">← Volver al inicio</a>
+          <h1>Cheatsheet JavaScript</h1>
+          <p>Referencia rápida de variables, funciones, arrays y objetos, DOM, eventos y módulos ES.</p>
+
+          <article class="cheatsheet-block">
+            <h2>1. Variables, tipos y funciones</h2>
+            <p>Usa <code>const</code> por defecto y <code>let</code> cuando el valor vaya a reasignarse:</p>
+            <pre><code>const nombre = "Jana";
+let contador = 0;
+
+function sumar(a, b) {
+  return a + b;
+}
+
+const multiplicar = (a, b) =&gt; a * b;</code></pre>
+          </article>
+
+          <article class="cheatsheet-block">
+            <h2>2. Arrays y objetos</h2>
+            <p>Estructuras habituales para guardar colecciones y datos agrupados por clave:</p>
+            <pre><code>const lenguajes = ["HTML", "CSS", "JS"];
+const etiquetas = lenguajes.map((item) =&gt; item.toLowerCase());
+
+const tarjeta = {
+  titulo: "CSS3",
+  url: "cheatsheet-css.html",
+};</code></pre>
+          </article>
+
+          <article class="cheatsheet-block">
+            <h2>3. Selección y manipulación del DOM</h2>
+            <p>Permiten buscar elementos en el documento y actualizar su contenido o clases:</p>
+            <pre><code>const boton = document.querySelector("#dark-mode-btn");
+const contenedor = document.getElementById("cheatsheets");
+
+document.body.classList.toggle("dark-mode");
+contenedor.innerHTML = "&lt;p&gt;Contenido actualizado&lt;/p&gt;";</code></pre>
+          </article>
+
+          <article class="cheatsheet-block">
+            <h2>4. Eventos y módulos ES</h2>
+            <p>Escucha interacciones del usuario y divide el código en archivos con <code>import</code> y <code>export</code>:</p>
+            <pre><code>// En un módulo (por ejemplo, cheatsheetsList.js)
+export const cheatsheets = [
+  { id: "html", titulo: "HTML5", enlace: "cheatsheet-html.html" }
+];
+
+// En el archivo principal (&lt;script type="module" src="./js/main.js"&gt;&lt;/script&gt;)
+import { cheatsheets } from "./cheatsheetsList.js";
+
+boton.addEventListener("click", () =&gt; {
+  console.log("Total de cheatsheets:", cheatsheets.length);
+});</code></pre>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Mi sitio web - Jana Araguas</p>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
