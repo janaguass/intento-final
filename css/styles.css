@@ -384,3 +384,23 @@ footer {
   background-color: var(--color-white);
   margin-top: auto;
 }
+.cheatsheets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+}
+
+.cheatsheet-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.cheatsheet-card img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}

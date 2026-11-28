@@ -1,8 +1,9 @@
 import Menu from './utils/menu.js';
 import darkMode from './utils/darkMode.js';
-import renderSkillsL from './utils/skillsList.js'; 
-
+import renderSkillsL from './utils/skillsList.js';
+import CheatsheetsList from './utils/cheatsheetsList.js';
 
 Menu();
 darkMode();
-renderSkillsL(); 
+renderSkillsL();
+CheatsheetsList();
